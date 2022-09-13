@@ -1,0 +1,1098 @@
+/* Global css start */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+}
+h3{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* .navbar-toggler {
+  background-color: #00aed8;
+} */
+.container{
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+/* Global css end */
+/* header css start */
+
+
+
+header nav{
+    background-color: black;
+}
+nav .parent {
+  display: contents;
+}
+nav .parent .logo{
+    max-width: 110px;
+}
+nav .parent .logo img{
+    width: 100%;
+}
+header .navbar-collapse li a {
+    color: white !important;
+}
+nav .mid {
+  justify-content: end;
+  /* text-align: center; */
+}
+.mid ul li {
+  margin-right: 106px;
+}
+.mid ul li:last-child {
+  margin-right: 140px;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+:focus {
+  outline: none;
+}
+
+
+/* toggle css */
+.icon {
+  border: 0;
+  height: 79px;
+  width: 79px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.icon .toggle {
+  display: block;
+  height: 5px;
+  width: 33px;
+  background-color: #00A2CA;
+  border-radius: 2px;
+  position: absolute;
+  left: 23px;
+  -webkit-transition: -webkit-transform 0.3s;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.icon span:first-child {
+  top: 28px;
+}
+.icon span:nth-child(2) {
+  top: 37px;
+}
+.icon span:last-child {
+  top: 46px;
+}
+.icon--active span:first-child {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 37px;
+}
+.icon--active span:last-child {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 37px;
+}
+.icon--active span:nth-child(2) {
+  opacity: 0;
+}
+.icon--transparent {
+  background-color: transparent;
+}
+.icon-transition {
+  -webkit-transition: -webkit-transform 0.3s;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+/* Header Css End */
+
+/* BAnner Sedction Css */
+.banner{
+    background-image: url('../images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 308px;
+    padding-bottom: 350px;
+}
+.banner .banner_text{
+    max-width: 885px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner .banner_text h1{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 95px;
+    color: #00A2CA;
+}
+.banner .banner_text h1 span{
+    display: block;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 400;
+    color: white;
+}
+.banner .banner_text p{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    color: white;
+}
+.banner .banner_btn{
+    text-align: center;
+    margin-top: 22px;
+}
+.banner .banner_btn a{
+    background-color: #00A2CA;
+    font-size: 37px;
+    font-weight: bold;
+    padding: 13px 0;
+    width: 254px;
+    display: inline-block;
+    margin-right: 51px;
+}
+.banner .banner_btn a:last-child{
+    margin-right: 0px;
+}
+
+/* BAnner Section End */
+
+/* Booking Section Start  */
+
+.booking{
+    background-image: url('../images/booking.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-top: 113px;
+    padding-bottom: 130px; */
+}
+.booking .booking_parent{
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+/* .booking .booking_parent .first{
+    display: flex;
+} */
+.booking .booking_parent .c1{
+    width: 100%;
+    max-width: 348px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 40px 75px 40px 21px;
+    text-align: left;
+    min-height: 359px;
+    margin-top: 113px;
+    margin-bottom: 130px;
+}
+.booking .booking_parent .c1 img{
+    width: 100%;
+}
+.booking .booking_parent .c1_img{
+    max-width: 65px;
+    padding-bottom: 15px;
+}
+.booking .booking_parent .c1 .inner_text h2{
+    font-size: 37px;
+    font-weight: bold;
+    line-height: 49px;
+   white-space: nowrap;
+}
+.booking .booking_parent .c1 .inner_text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+.booking .booking_parent .c1 .inner_text a{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 21px;
+    color: black;
+    display: inline-block;
+}
+.booking .booking_parent .book_form{
+    background-color: #00A2CA;
+    width: 100%;
+    max-width: 630px;
+    border-radius: 17px;
+    padding: 24px 87px 31px 52px;
+    color: white;
+    margin-top: -67px;
+    margin-bottom: -67px;
+}
+.booking .booking_parent .book_form .top_text{
+    padding-bottom: 33px;
+}
+.booking .booking_parent .book_form .top_text h2{
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.booking .booking_parent .book_form .top_text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.booking .booking_parent .book_form .input_section label{
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 34px;
+    display: block;
+    padding-bottom: 10px;
+}
+.booking .booking_parent .book_form .input_section input{
+    border-radius: 17px;
+    padding: 16px 103px 19px 32px ;
+    border: none;
+    margin-bottom: 44px;
+}
+.booking .booking_parent .book_form .input_section .first{
+    
+}
+.booking .booking_parent .book_form .input_section .first input{
+    width: 100%;
+}
+.booking .booking_parent .book_form .input_section .second input{
+    width: 100%;
+    max-width: 240px;
+    padding: 16px 80px 19px 32px ;
+}
+.booking .booking_parent .book_form .input_section .second{
+    display: flex;
+    align-items: center;
+}
+.booking .booking_parent .book_form .input_section .second .mr{
+    margin-right: 20px;
+}
+.booking .booking_parent .book_form .input_section a{
+    max-width: 488px;
+    width: 100%;
+    padding: 19px 0;
+    font-size: 26px;
+    font-weight: 400;
+    border: 2px solid white;
+    border-radius: 17px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* Booking Section End  */
+
+/* Destination Section Start */
+
+.destination{
+    padding-top: 137px;
+    padding-bottom: 96px;
+}
+.destination .inner_container{
+    max-width: 1480px;
+    margin: 0 auto;
+}
+.destination .des_top_text{
+text-align: center;
+}
+.destination .des_top_text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 14px;
+    
+}
+.destination .dest_body{
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+.destination .dest_body .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
+    gap: 14px;
+    grid-auto-flow:row;
+}
+.destination .dest_body .grid-item{
+    margin-bottom: 34px;
+    position: relative;
+}
+.destination .dest_body .grid_main{
+    display: grid;
+    row-gap: 20px;
+    height: 100%;
+}
+.destination .dest_body .main_card{
+    width: 100%;
+    position: relative;
+}
+.destination .dest_body .main_card img{
+    object-fit: cover;
+    height: 100%;
+}
+.destination .dest_body  .inner_img_text{
+    position: absolute;
+    bottom: 10%;
+    left: 29px;
+    color: white;
+}
+.destination .dest_body  .inner_img_text h4{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+
+}
+.destination .dest_body  .inner_img_text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+.destination .dest_body .bottom_btn {
+    text-align: center;
+}
+.destination .dest_body .bottom_btn a{
+    background-color: #00A2CA;
+    color: white;
+    max-width: 390px;
+    width: 100%;
+    border-radius: 11px;
+    padding: 13px 0;
+    display: inline-block;
+    text-align: center;
+    margin-top: 63px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Destination Section End */
+
+/* Packages Section Css start */
+
+.packages{
+    background: #EBEBEB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.packages .pkg_container{
+    max-width: 1765px;
+    margin: 0 auto;
+}
+.packages .pkg_container .pkg_top_text{
+    text-align: center;
+}
+.packages .pkg_container .pkg_top_text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 26px;
+    margin-bottom: 50px;
+}
+.packages .pkg_container .pkg_body{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.packages .pkg_container .pkg_body .p1{
+    width: 100%;
+    max-width: 555px;
+    border-radius: 34px;
+    background-color: white;
+}
+.packages .pkg_container .pkg_body .p1 .pkg_inner_img{
+    margin-bottom: 22px;
+    position: relative;
+}
+.packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text{
+    display: flex;
+    background-color: white;
+    position: absolute;
+    bottom: 1.75em;
+    left: 6.25%;
+    padding: 10px 19px 12px 30px;
+    border-radius: 35px;
+}
+.packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text .icon1 span{
+    font-size: 16px;
+}
+.packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text i{
+    color: #00A2CA;
+    padding: 0px 10px;
+}
+.packages .pkg_container .pkg_body .p1 .pkg_inner_img img{
+    width: 100%;
+}
+.packages .pkg_container .pkg_body .p1 .mid_text{
+    text-align: center;
+    padding: 0px 20px;
+}
+.packages .pkg_container .pkg_body .p1 .mid_text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.packages .pkg_container .pkg_body .p1 .pkg_footer{
+    background-color: #00A2CA;
+    text-align: center;
+    margin-top: 26px;
+    padding: 115px 0;
+    border-radius: 34px;
+}
+.packages .pkg_container .pkg_footer span{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 39px;
+}
+.packages .pkg_container .pkg_footer span img{
+    width: 100%;
+    max-width: 153px;
+}
+.packages .pkg_container .pkg_footer h4{
+    color: white;
+    font-size: 92px;
+    font-weight: bold;
+    line-height: 120px;
+}
+.packages .pkg_container .pkg_footer p{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.packages .pkg_container .pkg_footer a{
+    display: inline-block;
+    background-color: white;
+    max-width: 195px;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 9px;
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+/* Packages Section Css end*/
+
+/* Reccomended FLight Css Start */
+
+    .dist_main_card{
+        display: grid;
+        row-gap: 20px;
+        height: 100%;
+    }
+    .dist_main_card img{
+        height: 100%;
+    }
+/* Reccomended FLight Css End */
+
+/* RememberUs css Start */
+
+.remember_us{
+    background: url('../images/rememberUs.svg') no-repeat center;
+    background-size: cover;
+    padding-top: 128px;
+    padding-bottom: 112px;
+}
+.remember_us .rember_container{
+    max-width: 955px;
+    margin: 0 auto;
+    text-align: center;
+}
+.remember_us .rember_container .top_text h5{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 95px;
+    color: white;
+}
+.remember_us .rember_container .top_text p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: white;
+}
+.remember_us .rember_container .remember_btn{
+    margin-top: 28px;
+}
+.remember_us .rember_container .remember_btn a{
+    background-color: #00A2CA;
+    font-size: 37px;
+    font-weight: bold;
+    padding: 13px 0;
+    width: 254px;
+    display: inline-block;
+    margin-right: 51px;
+}
+.banner .banner_btn a:last-child{
+    margin-right: 0px;
+}
+
+/* RememberUs css End */
+
+/* Gallery Section Css Start */
+.gallery{
+    background-color: #EBEBEB;
+    padding: 128px 20px;
+}
+.gallery .inner_galler_main{
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+.gallery .inner_galler_main .top_gallery_heading{
+    text-align: center;
+}
+.gallery .inner_galler_main .gallery_body{
+    padding-top: 42px;
+}
+.gallery .inner_galler_main .gallery_body img{
+    width: 100%;
+    height: 100%;
+}
+.gallery .inner_galler_main .gallery_body .inner_images{
+    display: grid;
+    row-gap: 20px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Gallery Section Css End */
+
+
+
+/* Ddetail Css Start */
+
+.detail_text{
+    padding: 74px 20px;
+}
+.detail_text .text_container{
+    max-width: 1505px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+.detail_text .text_container h3{
+    margin-bottom: 14px;
+    text-align: center;
+}
+.detail_text .text_container p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 37px;
+}
+
+/* Ddetail Css End */
+
+/* Footer Css Start */
+footer{
+    background-color: black;
+}
+footer .footer_body{
+    max-width: 1632px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 51px 20px;
+}
+footer .footer_body .left_logo{
+    max-width: 250px;
+}
+footer .footer_body .left_logo img{
+    width: 100%;
+}
+footer .footer_body .right_items{
+    margin-left: auto;
+}
+footer .footer_body .right_items ul{
+    display: flex;
+    align-items: center;
+}
+footer .footer_body .right_items ul li{
+    color: white;
+    margin-right: 70px;
+
+}
+footer .footer_body .right_items ul li:last-child{
+    margin-right: 50px;
+
+}
+
+/* Footer Css End */
+
+
+
+
+/* Media Queries */
+@media(max-width:1800px){
+    .packages .pkg_container .pkg_body .p1{
+        margin-right: 20px;
+    }
+    .packages .pkg_container .pkg_body .p1:last-child{
+        margin-right: 0px;
+    }
+}
+
+@media(max-width:1440px){
+    h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .banner {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .banner .banner_text h1 {
+        font-size: 54px;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    .banner .banner_text p {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 35px;
+        color: white;
+    }
+    .banner .banner_btn a{
+        background-color: #00A2CA;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 8px 0;
+        width: 160px;
+        display: inline-block;
+        margin-right: 51px;
+    }
+    .booking .booking_parent .c1{
+        margin-right: 15px;
+        padding: 20px 30px;
+    }
+    .booking .booking_parent .c1 .inner_text h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .booking .booking_parent .book_form{
+        padding: 20px 40px 20px 40px;
+    }
+    .booking .booking_parent .book_form .top_text h2 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .booking .booking_parent .book_form .input_section label {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+    .booking .booking_parent .book_form .input_section input{
+        margin-bottom: 24px;
+        padding: 8px 70px 8px 20px;
+    }
+    .booking .booking_parent .book_form .input_section .second input{
+        padding: 8px 70px 8px 20px;
+    }
+    .booking .booking_parent .book_form .input_section a{
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 8px 0;
+    }
+
+    .packages .pkg_container .pkg_footer span{
+        font-size: 18px;
+    }
+    .packages .pkg_container .pkg_footer h4 {
+        font-size: 56px;
+        line-height: 65px;
+    }
+    .packages .pkg_container .pkg_footer p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+    .packages .pkg_container .pkg_footer a {
+        max-width: 150px;
+        padding: 8px 0;
+        font-size: 18px;
+    }
+    .remember_us .rember_container .top_text h5 {
+        font-size: 44px;
+        line-height: 56px;
+    }
+    .remember_us .rember_container .remember_btn a {
+        font-size: 26px;
+        padding: 10px 0;
+        width: 190px;
+    }
+}
+
+    @media(max-width:1366px){
+        .mid ul li {
+            margin-right: 50px;
+        }
+        .mid ul li:last-child {
+            margin-right: 70px;
+        }
+        .packages .pkg_container .pkg_body .p1 .pkg_footer{
+            padding: 50px 0px;
+        }
+        .destination .dest_body .inner_img_text h4{
+            font-size: 22px;
+            line-height: 20px;
+        }
+        .destination .dest_body .bottom_btn a {
+            max-width: 320px;
+            padding: 10px 0px;
+            font-size: 28px;
+        }
+    }
+    @media(max-width:1200px){
+        .booking .booking_parent{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .booking .booking_parent .c1{
+            width: 48%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .booking .booking_parent .book_form{
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+        .destination .dest_body .bottom_btn a{
+            max-width: 300px;
+            padding: 10px 0px;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+        .packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text{
+            padding: 10px 12px 12px 10px;
+        }
+        .packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text .icon1 span{
+            font-size: 13px;
+        }
+        footer .footer_body .right_items ul li {
+            color: white;
+            margin-right: 25px;
+            margin-bottom: 10px;
+        } 
+    }
+
+    @media(max-width:992px){
+        .navbar-nav{
+            align-items: center;   
+        }
+        .mid ul li:last-child{
+            margin-right: 50px;
+        }
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .packages .pkg_container .pkg_footer span img {
+            max-width: 90px;
+        }
+        .packages .pkg_container .pkg_top_text p{
+            margin-top: 18px;
+            margin-bottom: 22px;
+        }
+        .packages .pkg_container .pkg_body .p1 .pkg_footer {
+            padding: 25px 0px;
+            border-radius: 0px;
+        }
+        .packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text{
+            position: relative;
+            left: 0;
+            bottom: 0;
+        }
+        .packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text i {
+            padding: 0px 5px;
+        }
+        .packages .pkg_container .pkg_footer h4 {
+            font-size: 30px;
+            line-height: 24px;
+        }
+        .packages .pkg_container .pkg_footer p {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 12px;
+        }
+        .packages .pkg_container .pkg_footer a {
+            max-width: 113px;
+            font-size: 14px;
+        }
+        .destination .des_top_text p{
+            margin-top: 18px;
+        }
+        .destination .dest_body{
+            margin-bottom: 22px;
+        }
+        .destination .dest_body .inner_img_text p{
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .remember_us .rember_container .top_text h5 {
+            font-size: 32px;
+            line-height: 50px;
+        }
+        .remember_us .rember_container .top_text p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .remember_us .rember_container .remember_btn a {
+            font-size: 20px;
+            width: 124px;
+        }
+        .remember_us {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        footer .footer_body .left_logo {
+            max-width: 160px;
+        }
+        
+       
+
+    }
+
+    @media(max-width:768px){
+        .banner {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .banner .banner_text h1{
+            font-size: 38px;
+        }
+        .banner .banner_text h1 span {
+            font-size: 24px;
+            line-height: 16px;
+        }
+        .banner .banner_text p {
+            font-size: 22px;
+            line-height: 26px;
+        }
+        .banner .banner_btn a {
+            font-size: 18px;
+            padding: 8px 0;
+            width: 120px;
+            margin-right: 40px;
+        }
+        .booking .booking_parent .c1 {
+            width: 100%;
+        }
+        .booking .booking_parent .c1{
+            margin-bottom: 35px;
+            margin-top: 35px;
+        }
+        .booking .booking_parent .book_form .top_text h2 {
+            font-size: 34px;
+
+        }
+        .destination {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .packages {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .packages .pkg_container .pkg_body{
+            flex-direction: column;
+            align-items: center;
+        }
+        .packages .pkg_container .pkg_body .p1{
+            margin-bottom: 20px;
+        }
+        .packages .pkg_container .pkg_body .p1 .mid_text h3{
+            font-size: 18px;
+        }
+        .packages .pkg_container .pkg_body .p1 .mid_text p {
+            font-size: 16px;
+        }
+        .packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text {
+            position: absolute;
+            left: 6.25%;
+            bottom: 1.75em;
+            padding: 12px 40px;
+        }
+        .remember_us .rember_container .top_text p {
+            font-size: 16px;
+        }
+        footer .footer_body{
+            padding: 25px 20px;
+        }
+        footer .footer_body .right_items ul{
+            flex-direction: column;
+        }
+        footer .footer_body .right_items ul li:last-child{
+            margin-right: 25px;
+        }
+        .main_card .mid{
+            margin: 20px 0;
+        }
+         .gallery .inner_galler_main .gallery_body .mid{
+            margin: 20px 0;
+        }
+    }
+
+    @media(max-width:640px){
+        .booking .booking_parent .book_form .input_section .second{
+           display: unset;
+        }
+        .booking .booking_parent .book_form .input_section .second input{
+            max-width: unset;
+        }
+        .booking .booking_parent .book_form .input_section .second .mr {
+            margin-right: 0px;
+        }
+        .destination .dest_body{
+            margin-top: 25px;
+        }
+        .destination .dest_body {
+            margin-bottom: 0px;
+        }
+        .destination .dest_body .bottom_btn a{
+            font-size: 16px;
+            max-width: 190px;
+
+        }
+    }
+
+    @media(max-width:420px){
+        .banner {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .booking .booking_parent .c1 .inner_text h2{
+            font-size: 24px;
+
+        }
+        .booking .booking_parent .c1 .inner_text p{
+            font-size: 16px;
+        }
+        .booking .booking_parent .book_form .top_text h2 {
+            font-size: 26px;
+            line-height: 44px;
+        }
+        .booking .booking_parent .book_form .top_text {
+            padding-bottom: 22px;
+        }
+        .booking .booking_parent .book_form .input_section label{
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .booking .booking_parent .book_form .input_section a {
+            font-size: 18px;
+            max-width: 168px;
+            padding: 5px 0;
+        }
+        .packages .pkg_body .p1 .pkg_inner_img .inner_pkg_text {
+            padding: 10px 25px;
+        }
+        .destination{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .destination .dest_body .inner_img_text h4 {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        .destination .dest_body .bottom_btn a{
+            font-size: 14px;
+            max-width: 150px;
+
+        }
+        .packages {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .remember_us {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .remember_us .rember_container .top_text h5 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        .remember_us .rember_container .remember_btn a {
+            font-size: 18px;
+            width: 114px;
+            margin-right: 15px;
+        }
+        .detail_text {
+            padding: 50px 20px;
+        }
+    }
+    
