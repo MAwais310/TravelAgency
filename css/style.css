@@ -526,6 +526,42 @@ nav .mid {
   font-weight: bold;
   line-height: 39px;
 }
+.packages .rating {
+    display: flex;
+    flex-direction: row-reverse;
+} 
+.packages .rating > input{ display:none;}
+    
+    .rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 3vw;
+    color: white;
+    cursor: pointer;
+}
+    
+.packages .rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+    
+.packages .rating > label:hover:before,
+.packages .rating > label:hover ~ label:before {
+    opacity: 1 !important;
+    }
+    
+.packages .rating > input:checked ~ label:before{
+    opacity:1;
+    }
+    
+.packages .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+    
+.packages .star_rating{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 .packages .pkg_container .pkg_footer span img {
   width: 100%;
   max-width: 153px;
@@ -560,13 +596,19 @@ nav .mid {
 
 /* Reccomended FLight Css Start */
 
-.dist_main_card {
+.recomended .dist_main_card {
   display: grid;
   row-gap: 20px;
   height: 100%;
 }
-.dist_main_card img {
+.recomended .dist_main_card img {
   height: 100%;
+}
+.recomended .main_card .blaky{
+    color: black;
+}
+.recomended .mid .blaky{
+    bottom: 5%;
 }
 /* Reccomended FLight Css End */
 
@@ -1119,3 +1161,4 @@ footer .footer_body .right_items ul li:last-child {
     padding: 50px 20px;
   }
 }
+
